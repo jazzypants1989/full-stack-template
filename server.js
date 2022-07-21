@@ -17,4 +17,10 @@ MongoClient.connect(dbConnectionString)
         console.log('Connected to Database')
         db = client.db(dbName)
         collection = db.collection('movies')
-    }
+    })
+//5.) Create Port (in ENV in this case.)
+//-- Test Mongo and Port connection
+
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server is running on ${PORT}`)
+})
