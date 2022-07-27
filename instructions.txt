@@ -9,23 +9,28 @@
 // - add connection string to .env file
 // - 
 
-//5.) Create Port
+//5.) Create gitignore file
 
+//6.) Create Port
 //-- Test Mongo and Port connection
 
-//6.) Set Middle ware
+//7.) From root, init local git repo and commit
 
-//7.) Create gitignore file
+//8.) Set middleware
 
-//8.) Create Publicand Views folder
+//9.) Create Public and Views folder
 // -Add main.js and style.css to Public and index.ejs to Views
 
-//9.) From root, init local git repo and commit
+//10.) Add content to main.js, style.css, and index.ejs
 
-//10.) Create Heroku repo
+//11.) Create Heroku repo
 
 /* heroku login
 heroku create whatever-api
 echo "web: node server.js" > Procfile
 git add .
 git commit -m
+git push heroku main
+*/
+
+//12.) Test Heroku Link
