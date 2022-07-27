@@ -32,9 +32,13 @@ app.use(cors())
 //10.) Assign all CRUD routes
 
 app.get('/', async (req, res) => {
-    try{ res.render('index.ejs')
-    } catch (error) {console.error(error)}
+    try{ 
+        res.render('index.ejs')
+    } catch (error) {
+        res.status(500).send({message: error.message})
+    }
 })
+
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}`)
 })
